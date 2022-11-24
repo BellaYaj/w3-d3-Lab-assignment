@@ -1,0 +1,102 @@
+<html>
+
+<head>
+    <title>My First Web Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <header style="font-size: 60px; color: #fff;">My Web Site Brand</header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="page2.html">About</a></li>
+                <li><a href="page4.html">Gallery</li>
+                <li><a href="page3.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    <main>
+            <h1>My Fourth Heading</h1>
+            <p>My Fourth paragraph.</p>
+        <ul>
+            <li id="photo">
+                <div class="app-img-wrapper">
+                    <img src="images/Santa Claus.jpg" class="img-responsive app-img" alt="App">
+                    <h2 class="app-img-text">Santa Claus</h2>
+                        </a>
+                            </div>
+                <div class="app-img-wrapper">
+                    <img src="images/Family Winter.webp" class="img-responsive app-img" alt="App">
+                    <h2 class="app-img-text">Family time in the winter.</h2>
+                        </a>
+                            </div>
+                <div class="app-img-wrapper">
+                    <img src="images/Santa reindeer.jpg" class="img-responsive app-img" alt="App">
+                    <h2 class="app-img-text">Santa's reindeer</h2>
+                        </a>
+                            </div>
+                <div class="app-img-wrapper">
+                    <img src="images/Snowland.webp" class="img-responsive app-img" alt="App">
+                    <h2 class="app-img-text">Snow land</h2>
+                        </a>
+                            </div>
+                <div class="app-img-wrapper">
+                    <img src="images/Snowman.jpg" class="img-responsive app-img" alt="App">
+                    <h2 class="app-img-text">Snowman</h2>
+                        </a>
+                            </div>
+                <div class="app-img-wrapper">
+                    <img src="images/winter fun.jpg" class="img-responsive app-img" alt="App">
+                    <h2 class="app-img-text">Fun in the winter.</h2>
+                        </a>
+                            </div>
+                <div class="app-img-wrapper">
+                    <img src="images/christmas tree.jpg" class="img-responsive app-img" alt="App">
+                    <h2 class="app-img-text">Christmas tree</h2>
+                        </a>
+                            </div>
+                <div class="app-img-wrapper">
+                    <img src="images/Beautiful winter.jpg" class="img-responsive app-img" alt="App">
+                    <h2 class="app-img-text">Beautiful winter</h2>
+                        </a>
+                            </div>
+                <div class="app-img-wrapper">
+                    <img src="images/snowflake.jpg" class="img-responsive app-img" alt="App">
+                    <h2 class="app-img-text">Snowflake</h2>
+                        </a>
+                            </div>
+                <div class="app-img-wrapper">
+                    <img src="images/winterland.jpg" class="img-responsive app-img" alt="App">
+                    <h2 class="app-img-text">Winterland</h2>
+                        </a>
+                            </div>
+            </li>
+        </ul>
+    </main>
+
+        <footer>&copy; Copyright 2022 My Website Name</footer>
+
+    </div>
+    <script>
+        var photos = [];
+        var fileNames =[];
+        var imageList = [];
+        var image; 
+        var openList; <li id='photo'>;
+        var closeList = </li>;
+
+        for (var i=0; i<10; i++) {
+            fileNames.push("winterland" + (i+1));
+            photos.push("img src='images/" + fileNames[i] + ".jpg'>")
+            image = openList + photos[i] + closeList;
+            imageList.push(image);
+            imageList.join("  ");
+        }
+        document.getElementById("album").innerHTML = imageList.join("  ");
+
+    </script>
+</body>
+
+</html>
